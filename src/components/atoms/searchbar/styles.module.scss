@@ -1,0 +1,32 @@
+@import "@/styles/responsive.scss";
+@import "@/styles/colors.scss";
+
+.container{
+    form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.input{
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    height: 35px;
+    color: $gray-color;
+}
+
+.button{
+    cursor: pointer;
+    height: 35px;
+    border: none;
+    background-color: $gray-light-color;
+    color: $gray-color;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0 4px 4px 0;
+}

@@ -1,0 +1,13 @@
+@import "@/styles/colors.scss";
+@import "@/styles/padding.scss";
+
+.container{
+    @include Padding;
+}
+
+.content{
+    padding: 0.5rem;
+    width: 100%;
+    background-color: $white-color;
+    border-radius: 4px;
+}

@@ -1,0 +1,43 @@
+@import "@/styles/colors.scss";
+@import "@/styles/responsive.scss";
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    cursor: pointer;
+    
+    &+&{
+        border-top: 1px solid $gray-light-color;
+    }
+
+    @include Phone{
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.price{
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.title{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.region{
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: $gray-color;
+    opacity: 0.6;
+}
+
+.containerPicture{
+    grid-column: 1;
+    grid-row: 1/3;
+    margin-right: 0.5rem;
+}

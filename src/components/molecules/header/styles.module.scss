@@ -1,0 +1,16 @@
+@import "@/styles/colors.scss";
+@import "@/styles/padding.scss";
+
+.header{
+    @include Padding;
+
+    background-color: $primary-color;
+    width: 100%;
+    gap: 1rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
