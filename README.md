@@ -9,7 +9,7 @@ Dado o ID de um produto, deve-se poder acessar diretamente a visão do detalhe d
 1. JavaScript
 2. NextJS (https://nextjs.org/)
 3. NodeJS (API Route)
-4 .CSS Module 
+4. CSS Module 
 5. Atomic Design (https://atomicdesign.bradfrost.com/chapter-2/)
 6. Testing Library
 
