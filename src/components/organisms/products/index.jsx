@@ -13,7 +13,7 @@ export default function Products({ products }) {
   return (
     <div className={styles.container} data-testid="products">
       <div className={styles.content}>
-        {products.slice(0, 4)?.map((item) => {
+        {products?.slice(0, 4)?.map((item) => {
           return <Product key={item.id} onClick={handlerClick} item={item} />;
         })}
       </div>

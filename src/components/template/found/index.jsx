@@ -32,7 +32,7 @@ export default function Found() {
   }, [query]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid="found">
       <Header />
       <BreadCrump string={categories} />
       {loading ? <Loading /> : <Products products={products} />}

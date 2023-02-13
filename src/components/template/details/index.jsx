@@ -15,12 +15,12 @@ export default function Details() {
   const router = useRouter();
 
   useEffect(() => {
-    if (router.query?.id) {
-      getDetailsProduct(router.query.id).then((response) => {
+    if (router?.query?.id) {
+      getDetailsProduct(router?.query?.id).then((response) => {
         setInfo(response);
       });
     }
-  }, [router.query.id]);
+  }, [router?.query?.id]);
 
   return (
     <div className={styles.container} data-testid="details">

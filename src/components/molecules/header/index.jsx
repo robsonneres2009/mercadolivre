@@ -10,14 +10,14 @@ import { ContextAPI } from "@/components/hooks/context";
 export default function Header() {
   const [search, setSearch] = useState("");
   const router = useRouter();
-  const { query, setQuery, setProducts, products } = useContext(ContextAPI);
+  const { query, setQuery } = useContext(ContextAPI);
 
   useEffect(() => {
     setQuery(query);
   }, [query, setQuery]);
 
   useEffect(() => {
-    if (router.query.search) {
+    if (router?.query?.search) {
       setSearch(router.query.search);
       setQuery(router.query.search);
     } else {
